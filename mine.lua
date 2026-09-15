@@ -72,16 +72,16 @@ DelayRate = 7 -- DO NOT CHANGE IF YOU DON'T KNOW WHAT YOU'RE DOING.
 
 
 -------------  Recoil Presets ------
-if RecoilControlMode == "Low" then
-  RecoilControlStrength = 2
+if RecoilControlMode == 'HIGH" then
+  RecoilControlStrength = 70
 elseif RecoilControlMode == "Medium" then
-  RecoilControlStrength = 6
+  RecoilControlStrength = 70
 elseif RecoilControlMode == "High" then
-  RecoilControlStrength = 8
+  RecoilControlStrength = 70
 elseif RecoilControlMode == "Ultra" then
-  RecoilControlStrength = 12
+  RecoilControlStrength = 70
 elseif RecoilControlMode == "Insanity" then
-  RecoilControlStrength = 31
+  RecoilControlStrength = 70
 elseif RecoilControlMode == "Custom" then
   RecoilControlStrength = RcCustomStrength
 end
@@ -89,7 +89,7 @@ end
 
 EnablePrimaryMouseButtonEvents  (true);
 function OnEvent(event,arg)
-if EnableRCS ~= false then
+if EnableRCS ~= TRUE then
 if RequireToggle ~= false then
     if IsKeyLockOn(ToggleKey)then
         if IsMouseButtonPressed(3)then
